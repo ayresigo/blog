@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://urara-demo.netlify.app/</id>
+  <title><![CDATA[ayresigo]]></title>
+  <subtitle><![CDATA[ayresigo's blog]]></subtitle>
+  <icon>https://urara-demo.netlify.app/favicon.png</icon>
+  <link href="https://urara-demo.netlify.app" />
+  <link href="https://urara-demo.netlify.app/atom.xml" rel="self" type="application/atom+xml" />
+  <updated>2025-01-03T00:59:16.274Z</updated>
+  <author>
+    <name><![CDATA[Igor Carvalho]]></name>
+  </author>
+  <category term="SQL" scheme="https://urara-demo.netlify.app/?tags=SQL" />
+  <category term=".NET" scheme="https://urara-demo.netlify.app/?tags=.NET" />
+  <category term="CSharp" scheme="https://urara-demo.netlify.app/?tags=CSharp" />
+  <category term="Async" scheme="https://urara-demo.netlify.app/?tags=Async" />
+  <entry>
+    <title type="html"><![CDATA[𝗕𝗼𝗼𝘀𝘁𝗶𝗻𝗴 𝗬𝗼𝘂𝗿 .𝗡𝗘𝗧 𝗤𝘂𝗲𝗿𝘆 𝗣𝗲𝗿𝗳𝗼𝗿𝗺𝗮𝗻𝗰𝗲 𝘄𝗶𝘁𝗵 .𝗔𝘀𝗦𝗽𝗹𝗶𝘁𝗤𝘂𝗲𝗿𝘆() 🚀]]></title>
+    <link href="https://urara-demo.netlify.app/posts/as-split-query" />
+    <id>https://urara-demo.netlify.app/posts/as-split-query</id>
+    <published>2025-01-02T00:00:00.000Z</published>
+    <updated>2025-01-03T00:58:45.987Z</updated>
+    <content type="html">
+      <![CDATA[<p data-svelte-h="svelte-dwyc1x">𝗕𝗼𝗼𝘀𝘁𝗶𝗻𝗴 𝗬𝗼𝘂𝗿 .𝗡𝗘𝗧 𝗤𝘂𝗲𝗿𝘆 𝗣𝗲𝗿𝗳𝗼𝗿𝗺𝗮𝗻𝗰𝗲 𝘄𝗶𝘁𝗵 .𝗔𝘀𝗦𝗽𝗹𝗶𝘁𝗤𝘂𝗲𝗿𝘆() 🚀</p> <p data-svelte-h="svelte-8uugmi">If you’ve ever watched an EF Core query crawl to a halt trying to load tons of related data at once, I’ve got great news: .𝗔𝘀𝗦𝗽𝗹𝗶𝘁𝗤𝘂𝗲𝗿𝘆() 𝗶𝘀 𝗵𝗲𝗿𝗲 𝘁𝗼 𝗵𝗲𝗹𝗽!</p> <p data-svelte-h="svelte-wnl4w">𝗧𝗵𝗲 𝗣𝗿𝗼𝗯𝗹𝗲𝗺: 𝗢𝗻𝗲 𝗕𝗶𝗴, 𝗛𝗲𝗮𝘃𝘆 𝗤𝘂𝗲𝗿𝘆 🏗️By default, EF Core tries to fetch all related data in a single, massive query when you use .𝘐𝘯𝘤𝘭𝘶𝘥𝘦(). It’s like attempting to grab every item on your grocery list in one trip—sure, it’s one shot, but it might slow you down if the bag is too heavy!</p> <p data-svelte-h="svelte-p0rfr1">𝗧𝗵𝗲 𝗦𝗼𝗹𝘂𝘁𝗶𝗼𝗻: 𝗦𝗽𝗹𝗶𝘁𝘁𝗶𝗻𝗴 𝗜𝘁 𝗨𝗽! ✂️.𝘈𝘴𝘚𝘱𝘭𝘪𝘵𝘘𝘶𝘦𝘳𝘺() breaks that one giant query into multiple, smaller queries. That means:𝗙𝗮𝘀𝘁𝗲𝗿 𝗣𝗲𝗿𝗳𝗼𝗿𝗺𝗮𝗻𝗰𝗲: Smaller queries tend to run more quickly.𝗟𝗲𝘀𝘀 𝗠𝗲𝗺𝗼𝗿𝘆 𝗨𝘀𝗮𝗴𝗲: No more dealing with huge result sets all at once.𝗘𝗮𝘀𝗶𝗲𝗿 𝗗𝗲𝗯𝘂𝗴𝗴𝗶𝗻𝗴: Multiple simpler queries are easier to understand and optimize.</p> <p data-svelte-h="svelte-1ibvor5">See It in Action! 👀</p> <p data-svelte-h="svelte-tkq5h5">Check out the carousel to compare the code and the resulting SQL outputs. You’ll see:</p> <p data-svelte-h="svelte-ikvwco">Before .𝘈𝘴𝘚𝘱𝘭𝘪𝘵𝘘𝘶𝘦𝘳𝘺(): One giant query trying to return everything at once.After .𝘈𝘴𝘚𝘱𝘭𝘪𝘵𝘘𝘶𝘦𝘳𝘺(): Multiple, leaner queries that fetch data in smaller chunks.</p> <p data-svelte-h="svelte-t0zmcb">By moving through the images in the carousel, you’ll spot the difference in both the C# code and the underlying SQL. It’s a clear illustration of how .𝘈𝘴𝘚𝘱𝘭𝘪𝘵𝘘𝘶𝘦𝘳𝘺() can turn a performance bottleneck into a breeze!</p> <p data-svelte-h="svelte-1x1vdih">𝗪𝗵𝗲𝗻 𝗦𝗵𝗼𝘂𝗹𝗱 𝗬𝗼𝘂 𝗨𝘀𝗲 𝗜𝘁?If your EF Core queries feel slow or bloated, give .𝘈𝘴𝘚𝘱𝘭𝘪𝘵𝘘𝘶𝘦𝘳𝘺() a try. It’s a quick fix that can bring a big boost in responsiveness—no more struggling under the weight of giant queries!</p> <p data-svelte-h="svelte-1kxvfje">In a nutshell: .𝘈𝘴𝘚𝘱𝘭𝘪𝘵𝘘𝘶𝘦𝘳𝘺() makes your queries leaner, faster, and easier to manage. ✨</p> <h1 id="view-on-linkedin" data-svelte-h="svelte-o5lvd"><a href="#view-on-linkedin"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7277355101155971072/" rel="nofollow noopener noreferrer external" target="_blank">View on Linkedin</a></a></h1>]]>
+    </content>
+    <category term="SQL" scheme="https://urara-demo.netlify.app/?tags=SQL" />
+    <category term=".NET" scheme="https://urara-demo.netlify.app/?tags=.NET" />
+    <category term="CSharp" scheme="https://urara-demo.netlify.app/?tags=CSharp" />
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[𝗖𝗼𝗺𝗽𝗮𝗿𝗲 𝗦𝗲𝗾𝘂𝗲𝗻𝘁𝗶𝗮𝗹 𝘃𝘀. 𝗣𝗮𝗿𝗮𝗹𝗹𝗲𝗹 𝘄𝗶𝘁𝗵 𝗧𝗮𝘀𝗸.𝗪𝗵𝗲𝗻𝗔𝗹𝗹]]></title>
+    <link href="https://urara-demo.netlify.app/posts/task-when-all" />
+    <id>https://urara-demo.netlify.app/posts/task-when-all</id>
+    <published>2025-01-02T00:00:00.000Z</published>
+    <updated>2025-01-03T00:58:45.987Z</updated>
+    <content type="html">
+      <![CDATA[<p data-svelte-h="svelte-1ltbzia">𝗦𝘂𝗽𝗲𝗿𝗰𝗵𝗮𝗿𝗴𝗶𝗻𝗴 𝗔𝘀𝘆𝗻𝗰 𝗶𝗻 𝗖#: 𝗖𝗼𝗺𝗽𝗮𝗿𝗲 𝗦𝗲𝗾𝘂𝗲𝗻𝘁𝗶𝗮𝗹 𝘃𝘀. 𝗣𝗮𝗿𝗮𝗹𝗹𝗲𝗹 𝘄𝗶𝘁𝗵 𝗧𝗮𝘀𝗸.𝗪𝗵𝗲𝗻𝗔𝗹𝗹 ⚡</p> <p data-svelte-h="svelte-1vujy3u">Hey Devs! 👋Have you ever wanted to call multiple services or run multiple tasks at once without waiting for each one to finish before starting the next? That’s exactly where 𝗧𝗮𝘀𝗸.𝗪𝗵𝗲𝗻𝗔𝗹𝗹 comes to the rescue! Instead of running each task one by one (which can be slow if each task takes a while), you can fire them all simultaneously, wait for all to complete, and then process the results in bulk.</p> <p data-svelte-h="svelte-1qro8as">Below, we have a 𝘉𝘦𝘯𝘤𝘩𝘮𝘢𝘳𝘬𝘋𝘰𝘵𝘕𝘦𝘵 setup that measures:</p> <ol data-svelte-h="svelte-zwj7ra"><li>𝗦𝗲𝗾𝘂𝗲𝗻𝘁𝗶𝗮𝗹 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝘀 (one after another).</li> <li>𝗣𝗮𝗿𝗮𝗹𝗹𝗲𝗹 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝘀 (all at once using 𝘛𝘢𝘴𝘬.𝘞𝘩𝘦𝘯𝘈𝘭𝘭).</li></ol> <p data-svelte-h="svelte-hrwwxt">By measuring both approaches, we’ll see how 𝘛𝘢𝘴𝘬.𝘞𝘩𝘦𝘯𝘈𝘭𝘭 can significantly reduce the overall time when dealing with I/O-bound tasks such as HTTP calls.Let’s dive in! 🏊‍♂️</p> <p data-svelte-h="svelte-1gtllq6">𝗪𝗵𝘆 𝘂𝘀𝗲 𝙏𝙖𝙨𝙠.𝙒𝙝𝙚𝙣𝘼𝙡𝙡? 💡</p> <ol data-svelte-h="svelte-17jq5kl"><li><p>𝗧𝗶𝗺𝗲 𝗦𝗮𝘃𝗶𝗻𝗴𝘀If each request takes 500 ms, and you have 10 requests, a sequential approach might end up taking ~5000 ms. With 𝘛𝘢𝘴𝘬.𝘞𝘩𝘦𝘯𝘈𝘭𝘭, it could take around 500 ms total (assuming all 10 run simultaneously)!</p></li> <li><p>𝗖𝗹𝗲𝗮𝗻𝗲𝗿 𝗖𝗼𝗱𝗲Instead of a big 𝘧𝘰𝘳𝘦𝘢𝘤𝘩 that awaits every single call, you collect all tasks in a list and await them together. Easy to read and maintain!</p></li> <li><p>𝗕𝗲𝘁𝘁𝗲𝗿 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲 𝗨𝘁𝗶𝗹𝗶𝘇𝗮𝘁𝗶𝗼𝗻While one request is waiting on network I/O, others can proceed. This helps maximize concurrency without writing complex multi-threaded logic.</p></li></ol> <p data-svelte-h="svelte-zd0qx0">𝗘𝘅𝗽𝗲𝗰𝘁𝗲𝗱 𝗢𝘂𝘁𝗰𝗼𝗺𝗲 &amp; 𝗧𝗮𝗸𝗲𝗮𝘄𝗮𝘆𝘀 🤔𝗦𝗲𝗾𝘂𝗲𝗻𝘁𝗶𝗮𝗹 (𝘎𝘦𝘵𝘈𝘭𝘭𝘚𝘦𝘲𝘶𝘦𝘯𝘵𝘪𝘢𝘭𝘈𝘴𝘺𝘯𝘤): Runs each HTTP-like call one by one, typically summing all delays (e.g., 10 × 500 ms).</p> <p data-svelte-h="svelte-12nyg0x">𝗣𝗮𝗿𝗮𝗹𝗹𝗲𝗹 (𝘎𝘦𝘵𝘈𝘭𝘭𝘗𝘢𝘳𝘢𝘭𝘭𝘦𝘭𝘈𝘴𝘺𝘯𝘤): Initiates all tasks at once and waits for them together, drastically reducing total time if each call is I/O-bound.</p> <p data-svelte-h="svelte-7dyhmr">Feel free to share your thoughts or experiences with parallel async calls! Do you have any real-world story of boosting performance with 𝘛𝘢𝘴𝘬.𝘞𝘩𝘦𝘯𝘈𝘭𝘭? Let us know in the comments! 🎉</p> <p><img alt="image description" class="rounded-lg my-2" decoding="async" loading="lazy" src="urara.png"></p> <h1 id="view-on-linkedin" data-svelte-h="svelte-uw9tkb"><a href="#view-on-linkedin"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7280699390116155393/" rel="nofollow noopener noreferrer external" target="_blank">View on Linkedin</a></a></h1>]]>
+    </content>
+    <category term="Async" scheme="https://urara-demo.netlify.app/?tags=Async" />
+    <category term=".NET" scheme="https://urara-demo.netlify.app/?tags=.NET" />
+    <category term="CSharp" scheme="https://urara-demo.netlify.app/?tags=CSharp" />
+  </entry>
+  <entry>
+    <title type="html"><![CDATA[🚀 Choosing the right infrastructure for your project can be challenging! Should you go with 𝐖𝐞𝐛 𝐀𝐩𝐩, 𝐂𝐨𝐧𝐭𝐚𝐢𝐧𝐞𝐫 𝐀𝐩𝐩𝐬, or 𝐊𝐮𝐛𝐞𝐫𝐧𝐞𝐭𝐞𝐬? 🤔]]></title>
+    <link href="https://urara-demo.netlify.app/posts/webapp-containerapps-kubernetes" />
+    <id>https://urara-demo.netlify.app/posts/webapp-containerapps-kubernetes</id>
+    <published>2025-01-02T00:00:00.000Z</published>
+    <updated>2025-01-03T00:58:45.990Z</updated>
+    <content type="html">
+      <![CDATA[<p data-svelte-h="svelte-45dmyw">🚀 Choosing the right infrastructure for your project can be challenging! Should you go with 𝐖𝐞𝐛 𝐀𝐩𝐩, 𝐂𝐨𝐧𝐭𝐚𝐢𝐧𝐞𝐫 𝐀𝐩𝐩𝐬, or 𝐊𝐮𝐛𝐞𝐫𝐧𝐞𝐭𝐞𝐬? 🤔</p> <p data-svelte-h="svelte-hykuel">In this post, I break down the key differences, strengths, and weaknesses of each option, along with the best use cases for every scenario. Whether you’re building a quick MVP, scaling microservices, or managing complex architectures, there’s a solution tailored for you.</p> <p data-svelte-h="svelte-vqhewe">💡 Swipe through the carousel to find the best fit for your project!</p> <p data-svelte-h="svelte-x25767">👉 Which one do you use or prefer? Let me know in the comments!</p> <p data-svelte-h="svelte-efw2sn">hashtag#CloudComputing hashtag#DevOps hashtag#Kubernetes hashtag#Azure</p> <h1 id="view-on-linkedin" data-svelte-h="svelte-o5lvd"><a href="#view-on-linkedin"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7277355101155971072/" rel="nofollow noopener noreferrer external" target="_blank">View on Linkedin</a></a></h1>]]>
+    </content>
+    <category term="Async" scheme="https://urara-demo.netlify.app/?tags=Async" />
+    <category term=".NET" scheme="https://urara-demo.netlify.app/?tags=.NET" />
+    <category term="CSharp" scheme="https://urara-demo.netlify.app/?tags=CSharp" />
+  </entry>
+</feed>
